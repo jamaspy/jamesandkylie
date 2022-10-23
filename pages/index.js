@@ -1,7 +1,8 @@
 import Head from "next/head";
+import Hero from "../components/Hero";
 export default function Home() {
   return (
-    <div className="container">
+    <div className="container mx-auto p-4">
       <Head>
         <title>James & Kylie Wedding</title>
         <meta
@@ -11,7 +12,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="text-4xl text-indigo-600">Hello World</main>
+      <main className="rounded-t-3xl overflow-hidden">
+        <Hero
+          title="James & Kylie Wedding"
+          subtitle="25th Nov 2023 | Hunter Valley"
+        />
+      </main>
     </div>
   );
 }

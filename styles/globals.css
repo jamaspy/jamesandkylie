@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
+html,
+body {
   padding: 0;
   margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
