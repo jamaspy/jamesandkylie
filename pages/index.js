@@ -1,36 +1,29 @@
-import Head from "next/head";
-import Hero from "../components/Hero";
-import RoundedWrapper from "../components/RoundedWrapper";
+import { Header, Hero, RoundedWrapper } from "../components";
+import { Contact, Welcome } from "../components/sections";
+
 export default function Home() {
   return (
     <div className="container mx-auto p-4">
-      <Head>
-        <title>James & Kylie Wedding</title>
-        <meta
-          name="description"
-          content="James Aspinall and Kylie Clark Wedding Website"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+      <Header
+        title="James & Kylie"
+        description="James Aspinall & Kylie Clark's wedding website"
+      />
       <RoundedWrapper>
         <Hero
-          title="James & Kylie Wedding"
+          title="James & Kylie's Wedding"
           subtitle="25th Nov 2023 | Hunter Valley"
         />
-        <div className="p-4">
-          <p className="font-semibold my-4">
-            Welcome to our little wedding space on the internet 👋{" "}
-          </p>
-          <p>
-            Labore aliqua aliqua aute in. Labore aute ut adipisicing irure in do
-            amet adipisicing voluptate. Elit id consectetur amet occaecat irure
-            ad veniam commodo. Velit aliquip magna quis dolor ullamco mollit
-            occaecat aliqua. Proident dolore magna voluptate nostrud deserunt
-            aliqua deserunt non aliqua velit elit ea cupidatat.
-          </p>
-          <p className="mt-4">Lots of Love</p>
-          <p>James & Kylie </p>
+        <Welcome />
+        <hr />
+        <div className="flex flex-col md:flex-row p-4">
+          <div className="">
+            Qui eiusmod laboris adipisicing aliqua sunt adipisicing dolor
+            consectetur officia nisi in cupidatat anim. Cupidatat minim
+            consequat magna magna ea sit sunt do pariatur pariatur ad. Occaecat
+            consectetur aliqua eu nostrud Lorem. Deserunt commodo Lorem nostrud
+            ipsum nisi enim nisi ut amet in.
+          </div>
+          <Contact />
         </div>
       </RoundedWrapper>
     </div>
