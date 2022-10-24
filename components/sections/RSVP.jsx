@@ -10,6 +10,7 @@ import {
 } from "@heroicons/react/20/solid";
 import {useConfetti} from "../Confetti/ConfettiContext";
 import Link from "next/link";
+import {ConfettiContainer} from "../Confetti/ConfettiContaier";
 
 const Rsvp = () => {
     const {showConfetti} = useConfetti()
@@ -40,7 +41,7 @@ const Rsvp = () => {
             description: 'Sorry, we can not make it :( '
         },
     ]
-    
+
     const handleSubmit = async (e) => {
         e.preventDefault()
         const body = {name, rsvp, dietReqs, message}
@@ -79,9 +80,10 @@ const Rsvp = () => {
         setMessage('')
     }
 
+    const hasNoData = name.length === 0 || rsvp.length === 0
     return (
         <div className='container mx-auto'>
-
+            <ConfettiContainer/>
             <form onSubmit={handleSubmit}>
                 <div className={'mb-12'}>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700">
@@ -189,8 +191,10 @@ const Rsvp = () => {
                 )}
 
                 <Button
-                    className={`my-4 ${isSending && 'bg-orange-600'} ${isSent && "bg-green-600"} ${isError && "bg-red-600"}`}
-                    type="submit">
+                    className={`my-4 ${isSending && 'bg-orange-600'} ${isSent && "bg-green-600"} ${isError && "bg-red-600"} ${hasNoData || isSending || isSent && "cursor-not-allowed"}`}
+                    type="submit"
+                    disabled={hasNoData || isSending || isSent}
+                >
                     {isSending && <ClockIcon className="h-6 w-6 text-white mr-2 "/>}
                     {isSent && <EnvelopeIcon className="h-6 w-6 text-white mr-2 "/>}
                     {isError && !isSent && <ExclamationTriangleIcon className="h-6 w-6 text-white mr-2 "/>}
