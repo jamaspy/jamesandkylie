@@ -1,21 +1,17 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client-js"
   previewFeatures = ["referentialIntegrity"]
 }
 
 datasource db {
   provider = "mysql"
-  url = env("DATABASE_URL")
-  referentialIntegrity = "prisma"
+  url      = env("DATABASE_URL")
 }
 
 model Rsvp {
-id      Int   @default(autoincrement()) @id
-name    String
-rsvp String
-dietReqs String?
-message String?
+  id       Int     @id @default(autoincrement())
+  name     String
+  rsvp     String
+  dietReqs String?
+  message  String?
 }
