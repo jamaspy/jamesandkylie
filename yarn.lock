@@ -159,6 +159,23 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@prisma/client@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-4.5.0.tgz#f708549bee3da396d5741d846b4e4306b120210c"
+  integrity sha512-B2cV0OPI1smhdYUxsJoLYQLoMlLH06MUxgFUWQnHodGMX98VRVXKmQE/9OcrTNkqtke5RC+YU24Szxd04tZA2g==
+  dependencies:
+    "@prisma/engines-version" "4.5.0-43.0362da9eebca54d94c8ef5edd3b2e90af99ba452"
+
+"@prisma/engines-version@4.5.0-43.0362da9eebca54d94c8ef5edd3b2e90af99ba452":
+  version "4.5.0-43.0362da9eebca54d94c8ef5edd3b2e90af99ba452"
+  resolved "https://registry.yarnpkg.com/@prisma/engines-version/-/engines-version-4.5.0-43.0362da9eebca54d94c8ef5edd3b2e90af99ba452.tgz#5b7fae294ee9bd9790d0e7b7a0b0912e4222ac08"
+  integrity sha512-o7LyVx8PPJBLrEzLl6lpxxk2D5VnlM4Fwmrbq0NoT6pr5aa1OuHD9ZG+WJY6TlR/iD9bhmo2LNcxddCMr5Rv2A==
+
+"@prisma/engines@4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@prisma/engines/-/engines-4.5.0.tgz#82df347a893a5ae2a67707d44772ba181f4b9328"
+  integrity sha512-4t9ir2SbQQr/wMCNU4YpHWp5hU14J2m3wHUZnGJPpmBF8YtkisxyVyQsKd1e6FyLTaGq8LOLhm6VLYHKqKNm+g==
+
 "@rushstack/eslint-patch@^1.1.3":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
@@ -170,6 +187,13 @@
   integrity sha512-rEUrBSGIoSFuYxwBYtlUFMlE2CwGhmW+w9355/5oduSw8e5h2+Tj4UrAGNNgP9915++wj5vkQo0UuOBqOAq4nw==
   dependencies:
     tslib "^2.4.0"
+
+"@tailwindcss/forms@^0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@tailwindcss/forms/-/forms-0.5.3.tgz#e4d7989686cbcaf416c53f1523df5225332a86e7"
+  integrity sha512-y5mb86JUoiUgBjY/o6FJSFZSEttfb3Q5gllE4xoKjAAD+vBrnIhE4dViwUuow3va8mpH4s9jyUbUbrRGoRdc2Q==
+  dependencies:
+    mini-svg-data-uri "^1.2.3"
 
 "@types/json5@^0.0.29":
   version "0.0.29"
@@ -1324,6 +1348,11 @@ micromatch@^4.0.4, micromatch@^4.0.5:
     braces "^3.0.2"
     picomatch "^2.3.1"
 
+mini-svg-data-uri@^1.2.3:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/mini-svg-data-uri/-/mini-svg-data-uri-1.4.4.tgz#8ab0aabcdf8c29ad5693ca595af19dd2ead09939"
+  integrity sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==
+
 minimatch@^3.0.4, minimatch@^3.1.1, minimatch@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.1.2.tgz#19cd194bfd3e428f049a70817c038d89ab4be35b"
@@ -1619,6 +1648,13 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
+prisma@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/prisma/-/prisma-4.5.0.tgz#361ae3f4476d0821b97645e5da42975a7c2943bb"
+  integrity sha512-9Aeg4qiKlv9Wsjz4NO8k2CzRzlvS3A4FYVJ5+28sBBZ0eEwbiVOE/Jj7v6rZC1tFW2s4GSICQOAyuOjc6WsNew==
+  dependencies:
+    "@prisma/engines" "4.5.0"
+
 prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
@@ -1642,6 +1678,13 @@ quick-lru@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-5.1.1.tgz#366493e6b3e42a3a6885e2e99d18f80fb7a8c932"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
+
+react-confetti@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/react-confetti/-/react-confetti-6.1.0.tgz#03dc4340d955acd10b174dbf301f374a06e29ce6"
+  integrity sha512-7Ypx4vz0+g8ECVxr88W9zhcQpbeujJAVqL14ZnXJ3I23mOI9/oBVTQ3dkJhUmB0D6XOtCZEM6N0Gm9PMngkORw==
+  dependencies:
+    tween-functions "^1.2.0"
 
 react-dom@18.2.0:
   version "18.2.0"
@@ -1935,6 +1978,11 @@ tsutils@^3.21.0:
   integrity sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==
   dependencies:
     tslib "^1.8.1"
+
+tween-functions@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/tween-functions/-/tween-functions-1.2.0.tgz#1ae3a50e7c60bb3def774eac707acbca73bbc3ff"
+  integrity sha512-PZBtLYcCLtEcjL14Fzb1gSxPBeL7nWvGhO5ZFPGqziCcr8uvHp0NDmdjBchp6KHL+tExcg0m3NISmKxhU394dA==
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"

@@ -2,6 +2,7 @@ import { Transition } from "@headlessui/react";
 import React from "react";
 import { GrClose } from "react-icons/gr";
 import { HiMenu } from "react-icons/hi";
+import Link from "next/link";
 const RoundedWrapper = ({ children }) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -29,18 +30,30 @@ const RoundedWrapper = ({ children }) => {
         leaveTo="opacity-0 scale-75 "
       >
         <div className="flex items-center justify-center flex-col min-h-[97vh] w-full rounded-3xl bg-gradient-to-b from-cyan-500 to-blue-50 opacity-75 ">
-          <p className="text-white text-4xl mb-8 hover:font-semibold drop-shadow">
+          <Link passHref href={"/"}>
+          <a className="text-white text-4xl mb-8 hover:font-semibold drop-shadow">
             Home
-          </p>
-          <p className="text-white text-4xl mb-8 hover:font-semibold drop-shadow">
+          </a>
+          </Link>
+          <Link passHref href={"/location"}>
+          <a className="text-white text-4xl mb-8 hover:font-semibold drop-shadow">
             Location
-          </p>
-          <p className="text-white text-4xl mb-8 hover:font-semibold drop-shadow">
-            Timings
-          </p>
-          <p className="text-white text-4xl hover:font-semibold drop-shadow">
-            Accomodation
-          </p>
+          </a>
+          </Link>
+          <Link passHref href={"/rsvp"}>
+            <a className="text-white text-4xl mb-8 hover:font-semibold drop-shadow">
+            RSVP
+            </a>
+          </Link>
+          <Link passHref href={"/accommodation"}>
+            <a className="text-white text-4xl mb-8 hover:font-semibold drop-shadow">
+              Accommodation
+            </a>
+          </Link>  <Link passHref href={"/location"}>
+            <a className="text-white text-4xl mb-8 hover:font-semibold drop-shadow">
+             Menu
+            </a>
+          </Link>
         </div>
       </Transition>
 

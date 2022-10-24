@@ -40,7 +40,7 @@ const WorkSection = () => {
       }),
     });
     const data = await res.json();
-    console.log("THIS IS ", data);
+
     if (data.status === "Email Sent") {
       setEmailSent(true);
       setIsSending(false);
@@ -91,7 +91,7 @@ const WorkSection = () => {
             isDisabled
               ? "cursor-not-allowed"
               : "cursor-pointer hover:bg-sky-600"
-          } ${isSending ? "cursor-not-allowed bg-yellow-600" : ""} ${
+          } ${isSending ? "cursor-not-allowed bg-orange-600" : ""} ${
             emailSent ? "bg-green-600" : ""
           }`}
           disabled={isDisabled || isSending}
