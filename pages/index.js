@@ -2,6 +2,7 @@ import {Header, Hero, RoundedWrapper} from "../components";
 import {Contact, Welcome} from "../components/sections";
 import Link from "next/link";
 import React from "react";
+import {FaWhatsapp} from "react-icons/fa";
 
 export default function Home() {
     return (
@@ -47,7 +48,17 @@ export default function Home() {
                         <p><span className='font-semibold'>Dress Code:</span> Smart Formal</p>
 
                     </div>
-                    <Contact/>
+                    <div className="flex flex-col w-full">
+                        <div className="flex flex-row items-center justify-end mb-4 hover:text-green-600">
+                            <FaWhatsapp className="text-green-600 text-2xl mr-2"/>
+                            <a href="https://wa.me/+61415392527" className="font-semibold" target="_blank"
+                               rel="noreferrer noopener">WhatsApp</a>
+                        </div>
+                        <Contact/>
+
+                    </div>
+
+
                 </div>
             </RoundedWrapper>
         </div>
