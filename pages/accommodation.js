@@ -59,7 +59,7 @@ const Accommodation = () => {
       nights: "2",
     },
     {
-      name: "Rachel Exton &amp; Danielle Furguson",
+      name: "Rachel Exton & Danielle Furguson",
       room: "King Suite",
       number: "209",
       nights: "2",
@@ -140,13 +140,13 @@ const Accommodation = () => {
   return (
     <div className="container mx-auto p-4 mb-12">
       <Header
-        title="James & Kylie | Location"
+        title="James & Kylie | Accommodation"
         description="James Aspinall & Kylie Clark's wedding location | Hunter Valley NSW"
       />
       <RoundedWrapper>
         <Hero
           title="Accommodation"
-          subtitle="Best places to stay"
+          subtitle="Your rooms have been reserved"
           imageTitle={"circa.jpeg"}
         />
         <div className="hidden md:flex items-center justify-evenly pr-4 mt-4 text-center text-xl">
@@ -188,6 +188,19 @@ const Accommodation = () => {
           </Link>
         </div>
         <hr className="mt-8" />
+        <div className="p-4">
+          <p className="font-semibold text-xl">
+            Contact the venue to pay your deposit
+          </p>
+          <p>
+            <span className="font-semibold">Phone:</span> (02) 4998 7670 (9am to
+            4pm AEST)
+          </p>
+          <p>
+            <span className="font-semibold">Email:</span>{" "}
+            relax@pokolbinvillage.com.au
+          </p>
+        </div>
         <div className="flex flex-col md:flex-row p-4">
           <table class="table-auto w-full text-xs md:text-base">
             <thead className="text-left">
