@@ -53,23 +53,18 @@ const Rsvp = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
       });
-      if (response.status !== 200) {
-        console.log("something went wrong");
-      } else {
-        showConfetti();
-        setIsSending(false);
-        setIsSent(true);
-        setIsError(false);
-        resetForm();
-        console.log("form submitted successfully !!!", response.json());
-        //set a success banner here
-      }
-      //check response, if success is false, dont take them to success page
+
+      showConfetti();
+      setIsSending(false);
+      setIsSent(true);
+      setIsError(false);
+      resetForm();
+      console.log("form submitted successfully !!!", response.json());
     } catch (error) {
       setIsSending(false);
       setIsSent(false);
       setIsError(true);
-      console.log("there was an error submitting", error);
+      console.log("there was an error submitting your rsvp", error);
     }
   };
 
