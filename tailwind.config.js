@@ -5,7 +5,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        hand: ["Sacramento", "cursive"],
+      },
+    },
   },
-  plugins: [require('@tailwindcss/forms')],
+  plugins: [require("@tailwindcss/forms")],
 };

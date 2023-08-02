@@ -3,7 +3,18 @@ import { Contact, Welcome } from "../components/sections";
 import Link from "next/link";
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
-
+import { Navbar } from "../components/Navbar";
+const LinkItem = ({ text }) => {
+  return (
+    <a
+      className={
+        "font-hand text-2xl font-semibold hover:text-slate-400 transition-all ease-in-out duration-150 cursor-pointer"
+      }
+    >
+      {text}
+    </a>
+  );
+};
 export default function Home() {
   return (
     <div className="container mx-auto p-4">
@@ -16,47 +27,10 @@ export default function Home() {
           title="James & Kylie's Wedding"
           subtitle="25th Nov 2023 | Hunter Valley"
           withButton={true}
-          imageTitle={"vines.jpg"}
+          imageTitle={"heroGrape.png"}
         />
-        <div className="hidden md:flex items-center justify-evenly pr-4 mt-4 text-center text-xl">
-          <Link passHref={true} href={"/"}>
-            <a
-              className={
-                "font-semibold hover:text-slate-400 transition-all ease-in-out duration-150 cursor-pointer"
-              }
-            >
-              Home
-            </a>
-          </Link>
-          <Link passHref={true} href={"/rsvp"}>
-            <a
-              className={
-                "font-semibold hover:text-slate-400 transition-all ease-in-out duration-150 cursor-pointer"
-              }
-            >
-              RSVP
-            </a>
-          </Link>
-          <Link passHref={true} href={"/location"}>
-            <a
-              className={
-                "font-semibold hover:text-slate-400 transition-all ease-in-out duration-150 cursor-pointer"
-              }
-            >
-              Location
-            </a>
-          </Link>
-          <Link passHref={true} href={"/accommodation"}>
-            <a
-              className={
-                "font-semibold hover:text-slate-400 transition-all ease-in-out duration-150 cursor-pointer"
-              }
-            >
-              Accommodation
-            </a>
-          </Link>
-        </div>
-        <hr className={"mt-2"} />
+        <Navbar />
+
         <Welcome />
         <hr />
         <div className="flex flex-col md:flex-row p-4">
