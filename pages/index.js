@@ -45,6 +45,9 @@ export default function Home() {
               Restaurant The Convent
             </p>
             <p className={"mb-2"}>
+              <span className="font-semibold">Coaches Depart:</span> 2:20pm
+            </p>
+            <p className={"mb-2"}>
               <span className="font-semibold">Arrival Time:</span> 2:30pm
             </p>
             <p className={"mb-2"}>

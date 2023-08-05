@@ -21,7 +21,7 @@ const Hero = ({ title, subtitle, withButton, imageTitle }) => {
           clipPath: "polygon(0 0, 100% 0, 100% 50%, 0% 100%)",
         }}
       >
-        <div className="flex flex-col items-center justify-center ml-4 md:ml-12">
+        <div className="flex flex-col items-center justify-center ml-4 md:ml-12 mb-2 md:mb-0">
           <Image
             src={`/tras.png`}
             placeholder="blur"
