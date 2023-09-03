@@ -28,6 +28,17 @@ export const Navbar = () => {
       <Link passHref={true} href={"/accommodation"}>
         <LinkItem href={"/accommodation"} text={"Accommodation"} />
       </Link>
+      <a
+        passHref={true}
+        href="https://www.hitchd.com/jamesandkylie"
+        target="_blank"
+        rel="noreferrer"
+        className={
+          "font-hand text-2xl font-semibold hover:text-slate-400 transition-all ease-in-out duration-150 cursor-pointer"
+        }
+      >
+        Gift Registry
+      </a>
     </div>
   );
 };
