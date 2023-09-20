@@ -64,14 +64,15 @@ const RoundedWrapper = ({ children }) => {
                 Accommodation
               </a>
             </Link>
-            {/* <Link passHref href={"/location"}>
-              <a
-                onClick={() => setIsOpen(false)}
-                className="text-white text-4xl mb-8 hover:font-semibold drop-shadow"
-              >
-                Menu
-              </a>
-            </Link> */}
+            <a
+              href="https://www.hitchd.com/jamesandkylie"
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setIsOpen(false)}
+              className="text-white text-4xl mb-8 hover:font-semibold drop-shadow"
+            >
+              Gift Registry
+            </a>
           </div>
         </Transition>
       </div>
