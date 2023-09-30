@@ -46,6 +46,7 @@ export default function Home() {
             </p>
             <p className={"mb-2"}>
               <span className="font-semibold">Coaches Depart:</span> 2:20pm
+              (from main complex carpark at the front)
             </p>
             <p className={"mb-2"}>
               <span className="font-semibold">Arrival Time:</span> 2:30pm
@@ -60,7 +61,8 @@ export default function Home() {
               <span className="font-semibold">Last Orders:</span> 11:00pm
             </p>
             <p>
-              <span className="font-semibold">Dress Code:</span> Smart Formal
+              <span className="font-semibold">Dress Code:</span> Smart Casual
+              (Bridesmaids are in navy blue)
             </p>
           </div>
           <div className="flex flex-col w-full">

@@ -83,19 +83,19 @@ const Accommodation = () => {
       nights: "3",
     },
     {
-      name: "Gary Zamal",
+      name: "Gary Zamel",
       room: "King Suite",
       number: "221",
       nights: "3",
     },
     {
-      name: "Lauren Monsel",
+      name: "Lauren Smart",
       room: "King Suite",
       number: "222",
       nights: "2",
     },
     {
-      name: "Chloe & Liam Connolly, Ross & Liz Hibburt ",
+      name: "Chloe & Liam Connolly, Ross & Liz Hibbert",
       room: "2 Bedroom Villa",
       number: "213",
       nights: "2",
@@ -153,7 +153,8 @@ const Accommodation = () => {
 
         <div className="p-4">
           <p className="font-semibold text-xl">
-            Contact the venue to pay your deposit
+            Thank you all for paying your deposit. Full payment will be required
+            upon check in.
           </p>
           <p>
             <span className="font-semibold">Phone:</span> (02) 4998 7670 (9am to
@@ -164,7 +165,7 @@ const Accommodation = () => {
             relax@pokolbinvillage.com.au
           </p>
         </div>
-        <div className="flex flex-col md:flex-row p-4">
+        {/* <div className="flex flex-col md:flex-row p-4">
           <table class="table-auto w-full text-xs md:text-base">
             <thead className="text-left">
               <tr className="divide-gray-400 border-b-2 py-1">
@@ -185,7 +186,7 @@ const Accommodation = () => {
               ))}
             </tbody>
           </table>
-        </div>
+        </div> */}
       </RoundedWrapper>
     </div>
   );
