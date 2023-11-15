@@ -60,6 +60,9 @@ export default function Home() {
             <p className={"mb-2"}>
               <span className="font-semibold">Last Orders:</span> 11:00pm
             </p>
+            <p className={"mb-2"}>
+              <span className="font-semibold">Return Coaches Depart:</span> 11:15pm
+            </p>
             <p>
               <span className="font-semibold">Dress Code:</span> Smart Casual
               (Bridesmaids are in navy blue)
